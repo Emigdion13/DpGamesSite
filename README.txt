@@ -1,5 +1,6 @@
 Part of Dark Paradigm Games Developer, working in collaboration with legions.
 
+https://www.linkedin.com/in/juan-nunez-b8a92711a/
 
 Art Designer
 {
