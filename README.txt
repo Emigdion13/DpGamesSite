@@ -1,5 +1,10 @@
-img/Legions_master.png
-img/MastersLogo.png
+Part of Dark Paradigm Games Developer, working in collaboration with legions.
 
-Creator https://www.jaqmarti.de/legions
 
+
+{
+  img/Legions_master.png
+  img/MastersLogo.png
+
+  Designer https://www.jaqmarti.de/legions
+}
