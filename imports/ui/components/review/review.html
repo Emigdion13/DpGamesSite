@@ -1,0 +1,121 @@
+<template name="review">
+    <div id="review">
+        <div id="modalMessage" class="modal">
+            <div class="modal-content">
+                <h4 class="modal-content-title-message">{{getMessage.messageTitle}}</h4>
+                <p class="modal-content-text-message">{{getMessage.messageMessage}}</p>
+            </div>
+            <div class="modal-footer">
+                <a href="" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="card noborders">
+                    <div class="card-image">
+                        <img src="/img/legions_masters.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Scripts-->
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h5 class="ml11">
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="letters">Thanks for trying Legions Masters!</span>
+                        </span>
+                    </h5>
+                    <span>Paradigm Games</span>
+                    <p>Paradigm Games appreciate your time testing our game Legions Masters, Hope you enjoyed the game as
+                        much as we did developing it, please rate our effort.</p>
+                    <div class="row">
+                        <form id="review_form" action="#">
+                            <div class="input-field col s12">
+                                <textarea id="first_impression" class="counter materialize-textarea" data-length="500" maxlength="500"></textarea>
+                                <label for="first_impression">How was your first impression of the game?</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="test_device" type="text" class="counter validate" data-length="50" maxlength="50">
+                                <label for="test_device">What device did you use to test?</label>
+                                <span class="error_Label">{{errorCollection.test_device}}</span>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="game_improvement" class="counter materialize-textarea" data-length="400" maxlength="400"></textarea>
+                                <label for="game_improvement">What would you improve about the game?</label>
+                                <span class="error_Label">{{errorCollection.game_improvement}}</span>
+                            </div>
+                            <div class="input-field col s12">
+                                <select id = "Rate_Legions">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="Awful">Awful</option>
+                                    <option value="Bad">Bad</option>
+                                    <option value="Ok">Ok</option>
+                                    <option value="Great">Great</option>
+                                    <option value="Perfect">Perfect</option>
+                                </select>
+                                <label>Rate Legions Masters</label>
+                                <span class="error_Label">{{errorCollection.Rate_Legions}}</span>
+                            </div>
+                            
+                            <div class="input-field col s12">
+                                <textarea id="aspect_game" class="counter materialize-textarea" data-length="400" maxlength="400"></textarea>
+                                <label for="aspect_game">What aspect of the game did you like?</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <select id="tutorials_clear">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="No">No</option>
+                                    <option value="Somewhat">Somewhat</option>
+                                    <option value="Yes">Yes</option>
+                                </select>
+                                <label>Where all the tutorials clear?</label>
+                                <span class="error_Label">{{errorCollection.tutorials_clear}}</span>
+                            </div>
+                            
+                            <div class="input-field col s12">
+                                <textarea id="evaluate_items" class="counter materialize-textarea" data-length="400" maxlength="400"></textarea>
+                                <label for="evaluate_items">Items misleading, incomplete or labeled incorrectly?</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="future_content" class="counter materialize-textarea" data-length="400" maxlength="400"></textarea>
+                                <label for="future_content">Content would you like to see in the future?</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <select id="app_behave">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="Awful">Awful</option>
+                                    <option value="Bad">Bad</option>
+                                    <option value="Ok">Ok</option>
+                                    <option value="Great">Great</option>
+                                    <option value="Perfect">Perfect</option>
+                                </select>
+                                <label>Rate the application smooth</label>
+                                <span class="error_Label">{{errorCollection.app_behave}}</span>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="glitchy_content" class="counter materialize-textarea" data-length="1000" maxlength="1000"></textarea>
+                                <label for="glitchy_content">Bugs/glitches while running the game or in background?</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="notification" class="counter materialize-textarea" data-length="500" maxlength="500"></textarea>
+                                <label for="notification">Do you get any type of notifications from game?</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="Connectivity" class="counter materialize-textarea" data-length="500" maxlength="500"></textarea>
+                                <label for="Connectivity">Any Connectivity issues? How the game behave?</label>
+                            </div>
+                            <div class="right-align">
+                                <button class=" btn waves-effect waves-light" type="submit" name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
