@@ -1,7 +1,7 @@
 Part of Dark Paradigm Games Developer, working in collaboration with legions.
 
 
-Images Designer
+Art Designer
 {
   img/Legions_master.png
   img/MastersLogo.png
